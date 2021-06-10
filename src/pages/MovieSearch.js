@@ -19,7 +19,7 @@ const MovieSearch = () => {
     setLoading(true);
     const res = await (
       await fetch(
-        `http://www.omdbapi.com/?s=${values.search}&apikey=${process.env.REACT_APP_API_KEY}&page=${page.current}`
+        `https://www.omdbapi.com/?s=${values.search}&apikey=${process.env.REACT_APP_API_KEY}&page=${page.current}`
       )
     ).json();
 
